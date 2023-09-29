@@ -1,0 +1,317 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:wght@100;200;500;600;700;800;900&display=swap');
+
+ /*
+    #4E4F46 gris
+    #C0CB34 verde
+    rgba(182, 203, 52, 1) verde
+    s
+*/
+.service-img{
+    /*padding-top: 3rem;*/
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-color: black;
+}
+.service-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+.title{
+    height: 100vh;
+    width: 60%;
+    margin-left: 20%;
+    position: relative;
+}
+.title h1{
+    color: white;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 40%;
+}
+/*
+    La parte del catálogo e imágenes de presentación para mostrar los servicios
+*/
+.cuadro-titulo{
+    padding-top: 7rem;
+    width: 100%;
+    height: 80vh;
+    background-color:  #DCDCDC;
+    display: flex;
+    /*position: absolute;
+    margin: 7% 0%;*/
+}
+.titulo-ser-presen{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.titulo-ser-presen h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    margin-top: 50%;
+}
+.img-titulo-ser{
+    width: 70%;
+    height: 100%;
+    
+}
+.img-titulo-ser img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*
+    texto de introducción a los servicios
+        ...
+            ....
+                .....
+                    ......    
+*/
+.tutti-cuadro-titulo{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #DCDCDC;
+}
+.intro-txt-ser{
+    width: 100%;
+}
+.intro-txt-ser-p{
+    width: 90%;
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.ul-ser{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.ul-ser-p{
+    font-weight: 100;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+
+/*
+    Para mostrar un div con cada servicio
+        ...
+            ....
+                .....
+                    ......    
+*/
+.catalogo-ser{
+    width: 100%;
+    background-color:  #DCDCDC;
+    display: flex;
+    padding-bottom: 10rem;
+    margin-bottom: 55vh;
+    margin-top: -2rem;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+.each-service{
+    height: 60vh;
+    width: 30%;
+    margin-left: 2.5%;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+.each-service img{
+    opacity: 0.57;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+.each-service p{
+    color: white;
+    font-size: 2rem;
+    opacity: 0.7;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.7s;
+}
+.each-service:hover img{
+    opacity: 1;
+    transform: scale(1.107);
+}
+.each-service:hover p{
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.flipper-each{
+    height: 60vh;
+    width: 30%;
+    margin-left: 2.5%;
+    /*overflow: hidden;*/
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    transform-style: preserve-3d;
+}
+.face-each{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.face-each img{
+    opacity: 0.57;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.face-each.front p{
+    color: white;
+    font-size: 2rem;
+    opacity: 0.7;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flipper-each:hover .face-each.front{
+    transform: perspective(1500px)rotateY(180deg);
+}
+.face-each.back{
+    background-color: #B4B4B4;
+    transform: perspective(1500px)rotateY(180deg);
+    opacity: 0;
+}
+.flipper-each:hover .face-each.back{
+    transform: perspective(1500px) rotateY(360deg);
+    opacity: 1;
+}
+.list-info-each{
+    font-size: 1.4rem;
+    margin-left: -2rem;
+    list-style: none;
+}
+/*.each-service:hover:nth-child(1) h1{
+    background: rgb(83,85,69);
+    background: linear-gradient(90deg, rgba(83,85,69,1) 0%, rgba(91,93,68,1) 100%);
+}*/
+
+
+@media screen and (max-width:950px) {
+    .title{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .title h1{
+        position: absolute;
+        top: 20%;
+    }
+    /*
+        La parte del catálogo e imágenes de presentación para mostrar los servicios
+    */
+    .cuadro-titulo{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .titulo-ser-presen{
+        width: 100%;
+    }
+    .titulo-ser-presen h1{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .img-titulo-ser{
+        width: 100%; 
+    }
+    .img-titulo-ser img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+    }
+
+    /*
+        Para mostrar un div con cada servicio
+            ...
+                ....
+                    .....
+                        ......    
+    */
+    .catalogo-ser{
+        flex-direction: column;
+    }
+    .each-service{
+        height: 60vh;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+    }
+    .each-service p{
+        font-size: 3rem;
+        opacity: 1;
+    }
+
+
+    .intro-txt-ser-p{
+        text-align: start;
+    }
+    .ul-ser{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .ul-ser-p{
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 2.3rem;
+    }
+
+
+
+
+
+    .flipper-each{
+        height: 60vh;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+        /*overflow: hidden;*/
+
+    }
+}
+
+
+
+
+

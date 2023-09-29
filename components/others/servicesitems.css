@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+.tarjeta{
+    width: 100%;
+    height: 100vh;
+    /*margin: 15% 0%;*/
+    /*border-top: solid;*/
+    /*background-color: coral;*/
+}
+/*.tarjeta-invertida{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5rem 0rem;
+}*/
+.all-images{
+    position: relative;
+}
+.ser-title{
+    font-family: 'Ubuntu', sans-serif;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    background-color: coral;
+    /*top: 55%;
+    left: 50%;
+    transform: translate(-50%, 100%);*/
+    margin: 13% 30%;
+}
+.ser-title li{
+    list-style: none;
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-left: -8%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.ser-title:hover{
+    /*font-size: 1.2rem;*/
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.image1{
+    position: absolute;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0,0.14);
+}
+.image1 img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image1:hover img{
+    transform: scale(1.03);
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0,0.24);
+    /*cursor: pointer;*/
+    transition: 0.3s ease-in-out;
+}
+.image1:nth-child(1){
+    width: 20%;
+    height: 200px;
+    top: 0px;
+    right: 3%;
+}
+.image1:nth-child(2){
+    width: 30%;
+    height: 150px;
+    top: 31px;
+    left: 38%;
+}
+.image1:nth-child(3){
+    width: 30%;
+    height: 350px;
+    top: 11px;
+    left: 2%;
+}
+.image1:nth-child(4){
+    width: 15%;
+    height: 150px;
+    top: 491px;
+    left: 40%;
+}
+.image1:nth-child(5){
+    width: 30%;
+    height: 350px;
+    top: 361px;
+    right: 6%;
+}
+.image1:nth-child(6){
+    width: 20%;
+    height: 250px;
+    top: 430px;
+    left: 15%;
+}
+
+
+/*
+
+SEGUNDA OPCIÓN 
+    Al hacer un hover sobre el títul, el div
+    haga un flip y muestre la informaciíón,
+    imágenes un poco más ordenadas.
+
+*/
+
+.ser-row-info{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    /*background-color: cornflowerblue;*/
+    margin: 0rem 2.5%;
+    position: relative;
+}
+
+/*
+    para el div que gira al hover
+*/
+.flip-card{
+    position: relative;
+    width: 30%;
+    height: 60%;
+    top: 20%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease 0.2s;
+    z-index: 1;
+}
+.flip-card:hover{
+    transform: rotateY(180deg);
+}
+.flip-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #C0CB34;
+    border-radius: 13px;
+}
+.flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #4E4F46;
+    transform: rotateY(180deg);
+    border-radius: 13px;
+}

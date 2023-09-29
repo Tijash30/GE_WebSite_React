@@ -1,0 +1,212 @@
+
+ /*
+    #4E4F46 gris
+    #C0CB34 verde
+    rgba(182, 203, 52, 1) verde
+*/
+
+.espacio-nav-pro{
+    width: 100%;
+    height: 80px;
+}
+.nuestros-proyectos{
+    width: 100%;
+    height: 80px;
+    margin-top: -47px;
+}
+.nuestros-proyectos p{
+    /*font-family: 'Gideon Roman', cursive;
+    font-weight: 100;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: start;
+    color: #4E4F46;
+    margin-left: 110px;
+    font-size: 3.4rem;
+}
+.btns-pro{
+    display: flex;
+}
+.all-projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.each-pro{
+    width: 450px;
+    height: 300px;
+    margin: 3rem 1rem;
+    position: relative;
+    transition: 0.5s;
+    text-align: start;
+    cursor: pointer;
+}
+.each-pro p{
+    margin-top: 4px;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-left: 7px;
+    text-decoration:  underline 0.15em rgba(255, 255, 255, 1);
+    color: black;
+}
+.each-pro.none{
+    display: none;
+}
+.each-pro:hover .info-pro-hover{
+    margin-top: 0%;
+    opacity: 1;
+} 
+.img-each-pro{
+    width: 100%;
+    height: 85%;
+}
+.img-each-pro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-pro-hover{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -30%;
+    transition: 0.5s;
+    text-align: start;
+    opacity: 0;
+}
+.info-pro-hover p{
+    line-height: 2px;
+    margin-top: 3rem;
+    margin-left: 7px;
+    font-weight: 200;
+    font-style: none;
+}
+
+/*
+    lista de opciones de proectos 
+    está arriba de los todos los proyectos
+*/
+.pro-menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /*margin-left: 20px;*/
+    position: relative;
+    transition: 1s;
+}
+.menu-icons-pro{
+    display: none;
+    z-index: 2;
+    /*font-family: 'Gideon Roman', cursive;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #4E4F46;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+.pro-list{
+    display: flex;
+    margin-left: 20px;
+}
+.pro-list button{
+    font-family: 'Gideon Roman', cursive;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #4E4F46;
+}
+.important-pro{
+    text-decoration: underline rgba(182, 203, 52, 1);
+    text-decoration-thickness: 5px;
+    font-weight: 700;
+}
+.important-pro:hover, .normal-pro:hover{
+    animation: bounce-list 0.8s infinite;
+    text-decoration-thickness: 5px;
+    font-weight: 700;
+}
+@keyframes bounce-list {
+    50%{
+        transform: translateY(-10px);
+    }  
+}
+.hr-pro{
+    width: 87%;
+    background-color: #C0CB34;
+    margin-top: 3rem;
+    height: 5px;
+    border-radius: 50px;
+}
+@media screen and (max-width: 950px){
+    .menu-icons-pro{
+        display: grid;
+        z-index: 0;
+    }
+    .pro-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        backdrop-filter: blur(2px);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -1000%;
+        align-items: stretch;
+        margin: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+        margin-left: -40px;
+    }
+    .pro-list.active{
+        left: 0%;
+        z-index: 1;
+        opacity: 1;
+        top: 100%;
+    }
+    .pro-menu{
+        margin-top: 65px;
+        /*margin-left: -80px*/
+    }
+    .pro-menu.active{
+        margin-bottom: 330px;
+    }
+    .pro-list a{
+        margin-left: 0px;
+    }
+
+    .nuestros-proyectos{
+        width: 100%;
+        height: 80px;
+        margin-top: -17px;
+    }
+    .nuestros-proyectos p{
+        text-align: center;
+        font-size: 2.4rem;
+        margin-left: 0;
+    }
+    .info-pro-hover{
+        margin-top: -59px;
+        opacity: 1;
+    }
+
+    .each-pro:hover .info-pro-hover{
+        margin-top: -59px;
+    } 
+}
+

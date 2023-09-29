@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:wght@100;200;500;600;700;800;900&display=swap');
+
+.espacio-nav-ochenta{
+    width: 100%;
+    height: 80px;
+}
+.imagen-equipo{
+    width: 20%;
+    height: 30vh;
+    margin-left: 40%;
+}
+.imagen-equipo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+
+    para la parte de la información e imágnes de misiópn vivión y compromiso
+        ...
+            ....    
+                .....
+                    ......
+
+*/
+.mis-vis-com{
+    margin: 3rem 10%;
+    width: 80%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+.each-misviscom{
+    width: 30%;
+    margin-left: 2.48%;
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.1 );
+    border-radius: 9px;
+}
+.img-misviscom{
+    width: 30%;
+    margin-left: 35%;
+    height: 15vh;   
+}
+.img-misviscom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tit-each-misviscom{
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+.txt-each-misviscom{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0.6rem 0.6rem;
+}
+
+
+/*
+
+    será la parte de la historia de g+e
+        ...
+            ....    
+                .....
+                    ......
+
+*/
+.historia-ge{
+    height: 80vh;
+    background-color: #DCDCDC;
+    width: 100%;
+}
+
+/*
+
+    parte donde salen todas las personas que trabajan aquí
+        ...
+            ....    
+                .....
+                    ......
+
+*/
+.tit-nuestro-equipo{
+    width: 100%;
+    font-size: 2.3rem;
+    padding: 1.6rem 0;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.historia-personal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}   
+.each-persona{
+    width: 19.5%;
+    /*height: 85vh;*/
+    margin: 0.3rem 0.2%;
+}
+.img-persona{
+    width: 100%;
+    height: 50vh;
+}
+.img-persona img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.nombre-persona{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: -1vh;
+}
+
+@media screen and (max-width: 950px){
+    .imagen-equipo{
+        width: 60%;
+        margin-left: 20%;
+    }
+    /*
+
+        para la parte de la información e imágnes de misiópn vivión y compromiso
+            ...
+                ....    
+                    .....
+                        ......
+
+    */
+    .mis-vis-com{
+        flex-direction: column;
+    }
+    .each-misviscom{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 3rem;
+    }
+    .img-misviscom{
+        width: 40%;
+        margin-left: 30%; 
+    }
+    /*
+
+        parte donde salen todas las personas que trabajan aquí
+            ...
+                ....    
+                    .....
+                        ......
+
+    */
+    .each-persona{
+        width: 48%;
+        height: 60vh;
+        margin: 0.3rem 1%;
+    }
+    .img-persona{
+        width: 100%;
+        height: 50vh;
+    }
+    .img-persona img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .puesto-persona{
+        display: none;
+    }
+
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:wght@100;200;500;600;700;800;900&display=swap');
+ 
+ /*
+    #4E4F46 gris
+    #C0CB34 verde
+    rgba(182, 203, 52, 1) verde
+    */
+
+.footer{
+    /*height: 60vh;*/
+    width: 100%;
+    background-color: #4E4F46;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.87;
+}
+.footer-hr{
+    height: 2px;
+    width: 85%;
+    border-radius: 15px;
+    background-color: #C0CB34;
+}
+.footer-info{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+
+
+
+
+
+.contact{
+    text-align: end;
+    width: 35%;
+}
+.menu-cont{
+    width: 100%;
+    list-style: none;
+    margin-top: 9%;
+}
+.menu-cont p{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: underline #4E4F46;
+    font-weight: 300;
+}
+.menu-cont i{
+    margin-right: 10px;
+}
+
+
+
+
+
+.footer-sm{
+    align-items: center;
+    width: 50%;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.sm-links{
+    color: white;
+    font-size: 1.8rem;
+    transition:0.2s;
+}
+.sm-links:hover{
+    font-size: 2.2rem;
+}
+
+
+
+.logo_foo{
+    height: auto;
+    width: 35%;
+    color: white;
+    margin-left: -7%;
+    text-decoration: underline #4E4F46;
+    transition: 0.5s ;
+}
+.logo_foo img{
+    height: 150px;
+    width: 270px;
+    border-radius: 7px;
+}
+.logo_foo:hover{
+    transform: translateY(-15px);
+}
+@media screen and (max-width: 950px) {
+    .footer{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .contact{
+        text-align: center;
+        margin-top: 5rem;
+        width: 95%;
+        overflow: hidden;
+    }
+
+
+
+
+
+    .footer-sm{
+        width: 80%;
+    }
+
+
+
+    .footer-hr{
+        margin: 15% 0;
+    }
+    .logo_foo{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+}

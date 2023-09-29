@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:wght@100;200;500;600;700;800;900&display=swap');
+
+.top-space-nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+.title-img-logo{
+    height: 25vh;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.title-img-logo p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.logo-entero-presen-due-comer{
+    display: none;
+}
+.logo-entero-presen-comer{
+    height: 24vh;
+}
+.logo-entero-presen-comer img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-comer-intro{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(16, 69, 115);
+}
+.img-comer-intro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+
+    Cuadros de imgs con sus respectivos álbumes 
+    ...
+        ....
+            .....
+                ......
+
+*/
+.cuadros-albums{
+    width: 100%;
+    
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cada-cuadro-img{
+    width: 33.33333%;
+    height: 50vh;
+    background-color: black;
+    overflow: hidden; 
+    position: relative;
+}
+.cada-cuadro-img:hover{
+    cursor: pointer;
+}
+.cada-cuadro-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.68;
+    object-fit: cover;
+    transition: 6s;
+    
+}
+.cada-cuadro-img:hover img{
+    transform: scale(1.4);
+}
+.cada-cuadro-img p{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    font-size: 2.8rem;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.clicked-album{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0px;
+}
+.clicked-album.active{
+    display: block;
+    z-index: 3;
+}
+.relative-album{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+.close-album{
+    margin-left: 70%;
+    color:  white;
+    font-size: 3.9rem;
+}
+
+.album-catalog{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    /*margin: 12% 5%;*/
+    margin-left: 5%;
+}
+.img-selected-album{
+    width: 90%;
+    height: 100%;
+}
+.img-selected-album.none{
+    display: none;
+}
+.img-selected-album img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.next-img-album{
+    color:  white;
+    font-size: 3.9rem;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+.contador-album{
+    margin-left: 70%;
+    color:  white;
+    font-size: 1.9rem;
+    margin-top: -25px;
+}
+
+/*
+
+    carrusel con información
+    ...
+        ....
+            .....
+                ......
+                    .......
+
+*/
+.carrusel-info-comer.none{
+    display: none;
+}
+.carrusel-info-comer{
+    margin-top: 10rem;
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info-tecnica-comer{
+    width: 40%;
+    text-align: start;
+}
+.info-tecnica-comer p{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.carrusel-chico{
+    width: 65%;
+    height: 70vh;
+    margin-top: 30px;
+    
+}
+.carrusel-chico img{
+    width: 100%;
+    height: 1005;
+    object-fit: cover;
+}
+/*.container-a-comer{
+    width: 100%;
+    height: 100%;
+}
+.slider-wraper-comer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.slider-a-comer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: x-mandatory;
+    scroll-behavior: smooth;
+}
+.slider-a-comer img{
+    padding-top: 80px;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav-comer{
+    display: flex;
+    column-gap: 2.5rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav-comer a{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity 250ms;
+}
+.slider-nav-comer a:hover{
+    opacity: 1;
+}*/
+
+/*
+
+    Catálogo de imgs pero son 9
+    ...
+        ....
+            .....
+                ......
+                    .......
+
+*/
+
+.catalog-nine{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.txt-cata-nine{
+    width: 80%;
+    text-align: start;
+}
+.txt-cata-nine p{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.nine-imgs-cata{
+    margin-top: 2.3rem;
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.each-nine{
+    width: 300px;
+    height: 200px;
+    margin: 0.15rem 0.15rem;
+    overflow: hidden;
+}
+.each-nine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+.each-nine img:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.div-each-nine{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0px;
+}
+.div-each-nine.active{
+    display: block;
+    z-index: 3;
+}
+.relative-nine{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.each-nine-big{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.each-nine-big.none{
+    display: none;
+}
+.each-nine-big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 950px){
+    .title-img-logo{
+        position: relative;
+    }
+    .title-img-logo p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .logo-entero-presen-due-comer{
+     
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.6;
+        height: 140px;
+        width: 240px;
+    }
+    .logo-entero-presen-due-comer img{
+        height: 100%;
+        width: 100%;
+    }
+    .logo-entero-presen-comer{
+        display: none;
+    }
+
+    /*
+
+        Cuadros de imgs con sus respectivos álbumes 
+        ...
+            ....
+                .....
+                    ......
+
+    */
+    .cuadros-albums{
+        height: auto;
+    }
+    .cada-cuadro-img{
+        width: 50%;
+        height: 400px;
+    }
+    .cada-cuadro-img p{
+        font-size: 2.8rem;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .img-selected-album{
+        width: 90%;
+        height: 70%;
+
+        position: absolute;
+    }
+    .album-catalog{
+        
+        justify-content: space-between;
+    }
+    .next-img-album{
+        z-index: 4;
+    }
+    /*
+
+        carrusel con información
+        ...
+            ....
+                .....
+                    ......
+                        .......
+
+    */
+
+    .carrusel-info-comer{
+        flex-direction: column;
+    }
+    .info-tecnica-comer{
+        width: 100%;
+    }
+    .carrusel-chico{
+        width: 100%;
+        height: auto;
+    }
+    /*
+
+        Catálogo de imgs pero son 9
+        ...
+            ....
+                .....
+                    ......
+                        .......
+
+    */
+    .txt-cata-nine{
+        width: 100%; 
+    }
+    .nine-imgs-cata{
+        margin-top: 2.3rem;
+        width: 100%;   
+        display: flex;
+        flex-wrap: wrap;  
+        /*margin-left: 5%;*/
+    }
+    .each-nine{
+        width: 48%;
+        height: 200px;
+        margin: 0.15rem 0.15rem;
+    }
+}

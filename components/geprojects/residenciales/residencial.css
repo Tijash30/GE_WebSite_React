@@ -1,0 +1,447 @@
+.espacio-ochpx{
+    width: 100%;
+    height: 80px;
+}
+.res-presen-imgs{
+    width: 80%;
+    background-color: white;
+    padding: 0 10%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+}
+.res-presen-imgs p{
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.logo-entero-presen{
+    height: 25vh;
+}
+.logo-entero-presen-due{
+    display: none;
+}
+.logo-entero-presen img{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+
+    para el fonde estático del render
+        ...
+            ....
+                .....
+                    ......
+
+*/
+.fondo-estatico-render{
+    position: fixed;
+    top: 0px;
+    z-index: -2;
+    background-color: #4E4F46;
+    width: 100%;
+    height: 100%;
+}
+.fondo-estatico-render img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.espacio-para-fondo{
+    width: 100%;
+    height: 80vh;
+}
+
+/*
+
+    3 imágenes PARA MOSTRAR PROCESO DE RESIDENCIA
+        ...
+            ....
+                .....
+                    ......
+
+*/
+.tres-imgs-proceso{
+    width: 100%;
+    display: flex;
+   /*background-color: #BABABA;*/
+   background-color: white;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+.cada-tres-img{
+    width: 30%;
+    height: 70vh;
+    margin: 0 2%;
+}
+.cada-tres-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.linea-vert-fra{
+    background-color: black;
+    height: 60vh;
+    margin-top: 5vh;
+    width: 2.3px;
+    border-radius: 90px;
+
+}
+
+/*
+
+    para mostrar la información y la imgen de la residencia
+        ...
+            ....
+                .....
+                    ......
+
+*/
+
+.relative-div-info-res{
+    width: 100%;
+    /*background-color: #BABABA;*/
+    background-color: white;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+.pro-menu-res{
+    width: 80%;
+    margin-left: 5%;
+    transition: 1s;
+    margin-bottom: 10rem;
+}
+.hover-div-list-res{
+    transition: 0.7s;
+    position: relative;
+    padding: 1.5rem 0;
+    /*background-color: #4E4F46;*/
+}
+.all-info-res{
+    display: flex;
+    transition: 0.7s;
+}
+.lista-titulo-res{
+    font-weight: 600;
+    /*font-size: 1.5rem;*/
+    margin-top: 10px;
+    position: absolute;
+}
+.lista-texto-res{
+    position: absolute;
+    margin-left: 50%;
+    width: 40%;
+}
+.lista-texto-res.dos{
+    width: 40%;
+}
+.hr-lista-res{
+    width: 100%;
+    background-color: #4E4F46;
+    height: 2px;
+    position: absolute;
+    margin-top: 50px;
+    transition: 1s;
+}
+.hr-lista-res.dos{
+    margin-top: 100px;
+}
+
+/*
+    para mostrar las 2 imágenes que cambain tamaño
+*/
+.dos-imgs-dinamicas{
+    width: 96%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.primer-dina{
+    width: 68%;
+    height: 70vh;
+    transition: 0.4s;
+}
+.primer-dina img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.segunda-dina{
+    width: 28%;
+    height: 70vh;
+    transition: 0.4s;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.segunda-dina img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+.segunda-dina:hover img{
+    transform: scale(1.1);
+}
+
+/*
+
+    para mostrar el catalogo de imgs del proceso de construccion
+        ...
+            ....
+                .....
+                    ......
+
+*/
+.proceso-constr{
+    width: 100%;
+    padding-top: 0rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50vh;
+    padding-bottom: 7rem;
+}
+.cata-imgs-proceso{
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.each-img-hover-proceso{
+    width: 231px;
+    margin: 1rem 0.2rem;
+    height: 200px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.each-img-hover-proceso img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+}
+.each-img-hover-proceso img:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.each-img-hover-proceso:nth-child(1) img, .each-img-hover-proceso:nth-child(5) img, .each-img-hover-proceso:nth-child(9) img{
+    opacity: 0.7;
+}
+.txt-proceso{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.7rem;
+    z-index: 1;
+
+}
+
+/*
+
+    Para mostrar la imagen en pantalla completa del catálogo
+        ...
+            ....
+                .....
+                    ......
+
+*/
+.img-proc-cata{
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-proc-cata.active{
+    z-index: 4;
+}
+.relative-img-proc{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.absolute-arrow-img{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.img-selected-proc{
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+}
+.img-selected-proc.none{
+    display: none;
+}
+.img-selected-proc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.close-album-res{
+    margin-left: 70%;
+    color:  black;
+    font-size: 3.9rem;
+}
+.next-img-album-res{
+    color:  black;
+    font-size: 3.9rem;
+    position: absolute;
+    top: 40%;
+}
+.next-img-album-res:nth-child(1){
+    left: 5%;
+}
+.next-img-album-res:nth-child(2){
+    right: 5%;
+}
+
+
+
+
+
+@media screen and (max-width:950px) {
+    .res-presen-imgs{
+        position: relative;
+        overflow: hidden;
+    }
+    .res-presen-imgs p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -85%);
+    }
+    .logo-entero-presen-due{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.6;
+        height: 140px;
+        width: 240px;
+    
+    }
+    .logo-entero-presen-due img{
+        height: 100%;
+        width: 100%;
+    }
+    .logo-entero-presen{
+        display: none;
+    }
+
+    
+    /*
+
+        3 imágenes PARA MOSTRAR PROCESO DE RESIDENCIA
+            ...
+                ....
+                    .....
+                        ......
+
+    */
+    .tres-imgs-proceso{
+        flex-direction: column;
+    }
+    .cada-tres-img{
+        width: 80%;
+        height: 40vh;
+        margin: 0 10%;
+    }
+    .linea-vert-fra{
+        height: 2.3px;
+        margin: 1rem 15%;
+        width: 70%;
+    }
+
+    
+    /*
+
+        para mostrar la información y la imgen de la residencia
+            ...
+                ....
+                    .....
+                        ......
+
+    */
+
+    .pro-menu-res{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2.8rem;
+    }
+    .hover-div-list-res{
+        position: relative;
+        padding: 0rem 0;
+    }
+    .all-info-res{
+        display: flex;
+    }
+    .lista-titulo-res{
+        margin-top: 17px;
+        position: absolute;
+    }
+    .lista-texto-res{
+        position: relative;
+        margin-left: 48%;
+    }
+    .hr-lista-res{
+        position: relative;
+        margin-top: 0px;
+    }
+    /*
+        para mostrar las 2 imágenes que cambain tamaño
+    */
+    .dos-imgs-dinamicas{
+        flex-direction: column;
+    }
+    .primer-dina{
+        width: 100%;
+        height: 40vh;
+        margin-top: 0.6rem;
+    }
+    .segunda-dina{
+        width: 40%;
+        margin-left: 30%;
+        height: 20vh;
+        margin-top: 0.6rem;
+        transition: 0.4s;
+    }
+
+    /*
+
+        para mostrar el catalogo de imgs del proceso de construccion
+            ...
+                ....
+                    .....
+                        ......
+
+    */
+    .cata-imgs-proceso{
+        justify-content: center;
+    }
+
+
+
+    .next-img-album-res:nth-child(1){
+        left: 0%;
+    }
+    .next-img-album-res:nth-child(2){
+        right: 0%;
+    }
+}

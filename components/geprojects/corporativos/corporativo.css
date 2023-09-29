@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
+
+
+.dise-des-pro{
+    font-size: 1.4rem;
+    margin-right: 10%;
+    max-width: 20%;
+}
+.info-ini-pro img{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    height: 120px;
+    transition: 1s;
+}
+.espacio-img-pro{
+    height: 70vh;
+    /*background-color: rebeccapurple;*/
+}
+.corp-ini-img{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.corp-ini-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+/*
+    este div es para el espacio donde va a ir toda la información general del proyecto y una imagen 
+    ...
+    ...
+    ...
+*/
+.info-gene-pro{
+    width: 100%;
+    /*height: 90vh;*/
+    background-color: white;
+    position: relative;
+    transition: .7s;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+}
+.info-img-pro{
+    width: 100%;
+    height: 70vh;
+    margin-top: 5rem;
+    display: flex;
+}
+.img-mid-pro{
+    width: 70%;
+    height: 100%;
+}
+.img-mid-pro img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*
+    la lista de información
+*/
+.relative-div-side{
+    width: 30%;
+    height: 100%;
+}
+.pro-menu-corp{
+    /*width: 100%;*/
+    height: 90%;
+    width: 90%;
+    margin: 5% 5%;
+    /*display: flex;*/
+    /*background-color: #F0F0F0;*/
+    position: relative;
+}
+.menu-info-pro{
+    display: none;
+    z-index: 2;
+    font-size: 1.5rem;
+    /*background-color: aqua;*/
+}
+
+.all-info-corp{
+    display: flex;
+    justify-content: space-between;
+    /*text-align: start;*/
+    width: 90%;
+    margin: 0% 5%;
+}
+.hover-div-list{
+    transition: 0.8s;
+}
+.hover-div-list:hover{
+    background-color: #F4F4F4;
+}
+
+.hr-lista-pro{
+    width: 90%;
+}
+.lista-titulo-corp{
+    font-weight: 700;
+}
+.lista-texto-corp{
+    text-align: end;
+}
+
+/*
+    div para poner el texto en negritas
+    ...
+    ...
+    ...
+    ...
+*/
+.txt-negritas{
+    height: 70vh;
+    width: 100%;
+    margin-top: -7%;
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+.txt-info-ne{
+    text-align: start;
+    width: 40%;
+    height: 100%;
+    margin-left: 2%;
+}
+.txt-info-ne p{
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 20%;
+}
+.txt-neri-img{
+    height: 100%;
+    width: 60%;
+    margin-left: 0%;
+}
+.txt-neri-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*
+    Div para hacer el carrusel de imágenes
+    y el texto con info más técnica
+    ...
+    ...
+    ...
+*/
+.carrusel-info{
+    width: 100%;
+    /*height: 120vh;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.container-a{
+    width: 80%;
+    height: 80vh;
+    margin: 0% 10%;
+}
+.slider-wraper{
+    position: relative;
+    /*max-width: 48rem;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.slider-a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-type: x-mandatory;
+    scroll-behavior: smooth;
+}
+.slider-a img{
+    padding-top: 80px;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 2.5rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.info-tecnica{
+    width: 70%;
+    height: 35%;
+    margin: 1% 15%;
+    text-align: start;
+
+}
+.info-tecnica p{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+/*
+    para el div donde se mostrarán las imágenes 
+    que a l click se expanden 
+    ...
+        ....
+            .....
+                ......
+*/
+.scale-imgs{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    background-color: white;
+}
+.cata-imgs{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 5%;
+    justify-content: center;
+}
+.each-img-scale{
+    width: 300px;
+    height: 300px;
+    margin: 0.3rem 0.3rem;
+    transition: 0.6s;
+    box-shadow:0px 5px 25px 2px rgba(0, 0, 0,0.24);
+}
+.each-img-scale img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.each-img-scale:hover{
+    transform: scale(1.05);
+    box-shadow:0px 5px 25px 2px rgba(0, 0, 0,0.44);
+}
+.img-sele-cata{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*filter: blur(4px);*/
+    z-index: -2;
+    position: fixed;
+    top: 0px;
+}
+.img-sele-cata.active{
+    z-index: 3;
+}
+.relative-img-sele{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-selected{
+    height: 70%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-selected.none{
+    display: none;
+}
+.img-selected img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 950px){
+    /*
+        presentación 
+        al proyecto
+    
+    */
+    .espacio-nav-pro-due{
+        height: 35vh;
+    }
+    .info-ini-pro{
+        position: relative;
+        bottom: -9%;
+        flex-direction: column;
+    }
+   
+    .tiutlo-pro{
+        position: absolute;
+        right:  26px;
+        top: 60px;
+        width: 40%;
+    }
+    .dise-des-pro{
+        display: none;
+    }
+    .info-ini-pro img{
+        position: relative;
+        top: 170px;
+        left: 26%;
+        width: 190px;
+        
+    }
+
+
+
+    .info-img-pro{
+        width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+        /*position: absolute;*/
+        display: flex;
+        flex-direction: column;
+        /*background-color: black;*/
+    }
+    .img-mid-pro{
+        width: 90%;
+        margin: 0% 5%;
+        height: 100%;
+    }
+    .relative-div-side{
+        width: 80%;
+        height: 100%;
+        margin: 0% 10%;
+    }
+    .menu-info-pro{
+        display: grid;
+    }
+    .pro-menu-corp{
+        opacity: 0;
+        transition: 0.9s;
+    }
+    .pro-menu-corp.active{
+        margin-top: -15px;
+        opacity: 1;
+    }
+    .info-gene-pro{
+        height:40vh;
+        background-color: white;
+    }
+    .info-gene-pro.active{
+        height: calc(60vh + 300px);
+    }
+    /*
+        div para poner el texto en negritas
+        ...
+        ...
+        ...
+        ...
+    */
+    .txt-negritas{
+        height: auto;
+        flex-direction: column;
+    }
+    .txt-info-ne{
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        /*background-color: aqua;*/
+    }
+    .txt-neri-img{
+        height: 40vh;
+        width: 90%;
+        margin-left: 5%;
+    }
+    /*
+        Div para hacer el carrusel de imágenes
+        y el texto con info más técnica
+        ...
+        ...
+        ...
+    */
+    .carrusel-info{
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+    .container-a{
+        width: 90%;
+        height: 50%;
+        margin: 0% 5%;
+    }
+    .info-tecnica{
+        width: 80%;
+        height: 35%;
+        margin: 1% 10%;
+    
+        /*display: flex;
+        justify-content: space-around;*/
+    }
+
+    /*
+        img seleccionadaaaaa
+    */
+
+}

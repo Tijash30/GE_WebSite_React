@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Poppins:wght@100;200;500;600;700;800;900&display=swap');
+
+
+.fondo-transparente-vh{
+    /*background-position: relative;*/
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+
+}
+.home-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+    /*background-position: relative;*/
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    /*background-image: url("../assets/1.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+
+    animation-name: slide;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 25s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0%{
+        background-image: url("../assets/gelogofondo.jpg");
+    }
+    20%{
+        background-image: url("../assets/projects/TAPALPA/RENDER/JARDIN\ CENTRAL\ comp.jpg");
+    }
+    40%{
+        background-image: url("../assets/projects/CLOE/CLOE\ PARQUES\ TEPEYAC/RENDERS/2\ comp.png");
+    }
+    60%{
+        background-image: url("../assets/projects/PISO\ 22/RENDERS/16.jpg");
+    }
+    80%{
+        background-image: url("../assets/projects/PISO\ 20/salajuntas\ comp.jpg");
+    }
+    100%{
+        background-image: url("../assets/gelogofondo.jpg");
+    }
+
+    
+}
+
+/*
+    CLIENTESSS
+*/
+.clientes{
+    width: 100%;
+    height: auto;
+    padding-top: 15rem;
+    margin-bottom: 70vh;
+    /*background-color: #DCDCDC;*/
+    background-color: white;
+}
+.clientes p{
+    margin-top: 2rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.green-line{
+    width: 80%;
+    background-color: #C0CB34;
+    height: 5px;
+    border-radius: 50px;
+}
+.grey-line{
+    width: 90%;
+    background-color:#4E4F46;
+    height: 5px;
+    border-radius: 50px;
+}
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.img-pro{
+    width: 200px;
+    height: 140px;
+    margin: 4rem 3rem;
+}
+.img-pro img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s;
+}
+/*para el logo de bansi */
+.img-pro:nth-child(2) img{
+    height: 100%;
+    width: 80%;
+    margin-left: 3.5rem;
+}
+.img-pro img:hover{
+    transform: scale(1.09);
+}
+/*
+
+    cambio radical del inicio
+        ...
+            ....
+                .....
+                    ......
+
+*/
+
+.presen-due-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.presen-quienes{
+    width: 100%;
+    background-color: #DCDCDC;
+    display: flex;
+}
+.presen-quienes P{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4E4F46;
+    font-weight: 600;
+    margin-left: 15%;
+}
+.qiuenes-info{
+    padding-top: 3rem;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.quienes-div-xt{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.txt-wuienes{
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+/**/
+.img-quienes{
+    width: 35%;
+    height: 70vh;
+    background-color: #C0CB34;
+    border-radius: 10px;
+}
+.img-quienes div{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(2deg);
+    border-radius: 10px;
+    transition: 0.8s;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/equipoge/todos.jpg");
+}
+.img-quienes:hover div{
+    background-image: url("../assets/equipoge/uniforme.jpg");
+}
+
+/*
+
+    la priemra parte donde se muestran las 4 imágenes con su texto 
+        ...
+            ....
+                .....
+                    ......
+
+*/
+.tituio-intro-cuatro{
+    width: 100%;
+    font-size: 2.3rem;
+    background-color: white;
+    padding: 1.3rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+.intro-cuatro-imgs{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.each-cuatro-imgs{
+    width: 23%;
+    margin-left: 1.6%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.img-de-each{
+    height: 30vh;
+    width: 100%;
+    transition: 1s;
+}
+.img-de-each img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.tit-each-imgs{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.txt-each-imgs{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.img-de-each:hover{
+    transform: translateY(-22px);
+}
+
+@media screen and (max-width:950px) {
+    /*
+        clientes
+    */
+    
+    .img-pro{
+        margin: 2rem 0rem;
+    }
+    .presen-quienes P{
+        margin-left: 0rem;
+    }
+    .qiuenes-info{
+        flex-direction: column;
+    }
+    .quienes-div-xt{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .txt-wuienes:nth-child(2){
+        width: 100%;
+        margin-left: 0%;
+    }
+    .img-quienes{
+        width: 94%;
+        margin-left: 3%;
+        height: 40vh;
+    }
+    .img-quienes img{
+        transform: rotate(3deg);
+    }
+
+
+    /*
+
+        la priemra parte donde se muestran las 4 imágenes con su texto 
+            ...
+                ....
+                    .....
+                        ......
+
+    */
+    .intro-cuatro-imgs{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+        margin-top: -2.3rem;
+    }
+    .each-cuatro-imgs{
+        width: 47%;
+        margin-left: 1.6%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+    .img-de-each{
+        height: 30vh;
+        width: 100%;
+        transition: 1s;
+    }
+}

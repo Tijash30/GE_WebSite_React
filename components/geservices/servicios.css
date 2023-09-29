@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+
+ /*
+    #4E4F46 gris
+    #C0CB34 verde
+    rgba(182, 203, 52, 1) verde
+*/
+
+.color-gris{
+    background-color: #DCDCDC;
+}
+.espacio-nav{
+    width: 100%;
+    height: 60px;
+    background-color: #DCDCDC;
+}
+.ser-menu{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    
+    display: flex;
+    position: relative;
+    transition: 1s;
+}
+.ser-list{
+    display: flex;
+}
+.ser-list a{
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    text-decoration: none;
+    color: #4E4F46;
+}
+.important-ser{
+    text-decoration: underline rgba(182, 203, 52, 1);
+}
+.important-ser:hover, .normal-ser:hover{
+    animation: bounce-list 0.8s infinite;
+    text-decoration-thickness: 5px;
+    font-weight: 700;
+}
+@keyframes bounce-list {
+    50%{
+        transform: translateY(-10px);
+    }  
+}
+.menu-icons-ser{
+    display: none;
+    z-index: 2;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #4E4F46;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+}
+
+/*
+    Para el div gris con la introducción a cada 
+    servicio
+*/
+.intro-each-ser{
+    width: 100%;
+    height: 60vh;
+    background-color: #4E4F46;
+    color: white;
+    position: relative;
+    font-family: 'Gideon Roman', cursive;
+
+}
+.img-intro-ser{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.diagonal-intro{
+    position: absolute;
+    top: 0px;
+    width: 35%;
+    height: 80%;
+    margin: 2rem 2rem;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    /*clip-path: polygon(0 0%, 60% 0, 10% 100%, 0 100%);*/
+
+}
+.diagonal-intro .titulo{
+    font-size: 2.8rem;
+    margin: 2rem 1.3rem;
+}
+.diagonal-intro p{
+    line-height: 1.8;
+    margin: 2rem 1.3rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+/*
+
+
+    AQUI INICIA EL CAMBIO RADICAL
+    DE DISEÑO POR DÉBORAH
+        ...
+            ....
+                .....
+                    ......
+                        .......
+                            ........
+
+
+*/
+
+.general-radical-width{
+    background-color: #DCDCDC;
+    width: 100%;
+    padding: 7rem 0;
+}
+.imgs-info-flex{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div-info-img{
+    width: 30%;
+    height: 35vh;
+    position: relative;
+    margin: 2% 1.3%;
+}
+.divv-flipper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.face{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.face img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.face.front{
+    /*background-color: cornflowerblue;*/
+}
+.divv-flipper:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.face.back{
+    /*background-color: coral;*/
+    transform: perspective(500px) rotateY(180deg);
+}
+.divv-flipper:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.dis-none{
+    display: none;
+}
+.divv-txt{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.divv-txt p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 950px){
+    .menu-icons-ser{
+        background-color: #DCDCDC;
+        display: grid;
+        z-index: 0;
+    }
+    .ser-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        backdrop-filter: blur(2px);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -100%;
+        align-items: stretch;
+        margin: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+    }
+    .ser-list.active{
+        
+        left: 0%;
+        z-index: 0;
+        opacity: 1;
+        top: 100%;
+    }
+    .ser-menu{
+        margin-top: 80px;
+    }
+    .ser-menu.active{
+        margin-bottom: 230px;
+    }
+    .ser-list a{
+        margin-left: 0px;
+    }
+    .diagonal-intro{
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 0;
+    }
+    .diagonal-intro .titulo{
+        font-size: 2.4rem;
+    }
+    .diagonal-intro p{
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    .info-div-ser{
+        height: 270vh;
+    }
+    .img-top{
+        height: 25%;
+        clip-path: polygon(0 0%, 100% 0, 100% 35%, 0 60%);
+    }
+    .img-bottom{
+        height: 25%;
+        clip-path: polygon(0 65%, 100% 40%, 100% 100%, 0 100%);
+    }
+    .img-inside{
+        width: 80%;
+        height: 15%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .img-inside.baja{
+        top: 75%;
+        left: 10%;
+    }
+
+    /*
+
+
+        AQUI INICIA EL CAMBIO RADICAL
+        DE DISEÑO POR DÉBORAH
+            ...
+                ....
+                    .....
+                        ......
+                            .......
+                                ........
+
+
+    */
+
+    .general-radical-width{
+        padding: 7rem 0;
+    }
+    /*.imgs-info-flex{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }*/
+    .div-info-img{
+        width: 100%;
+    }
+}
