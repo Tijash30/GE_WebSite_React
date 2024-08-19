@@ -307,30 +307,32 @@ import kenia from '../assets/equipoge/KENIA.jpeg';
 import maya from '../assets/equipoge/MAYA.jpeg';
 import erick from '../assets/equipoge/ERICK.jpg';
 import juancarlos from '../assets/equipoge/juancarlos.jpg';
+import dulce from '../assets/equipoge/DULCE.jpg';
+import sergio from '../assets/equipoge/SERGIO.jpg';
 
 //colores pastel:       https://paletadecolores.online/pastel/
 
 export const NavItems= [
     {
-        title: "Inicio",
+        title: "Iniciee",
         url :"/",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-house"
     },
     {
-        title: "Servicios",
+        title: "Serviciees",
         url :"/service",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-briefcase"
     },
     {
-        title: "Proyectos",
+        title: "Proyectees",
         url :"/projects",
         cName : "nav-links",
         icon : "fa-solid fa-diagram-project"
     },
     {
-        title: "Nosotros",
+        title: "Nosotreees",
         url :"/about",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-users"
@@ -750,13 +752,13 @@ export const Historia_personas= [
         external: '',
     },
     {
-        imagen: logoanchoblanco,
+        imagen: dulce,
         nombre: 'Dulce Magallanes Osuna',
         puesto: 'Comercial',
         external: '',
     },
     {
-        imagen: logoanchoblanco,
+        imagen: sergio,
         nombre: 'Sergio Alberto Arrollo',
         puesto: 'Gerente de Arquitectura',
         external: '',
