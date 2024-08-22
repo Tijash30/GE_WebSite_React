@@ -238,6 +238,12 @@
     transform: translateY(-22px);
 }
 
+
+.whats-icon{
+    height: 250px;
+    width: 250px;
+    background-color: #C0CB34;
+}
 @media screen and (max-width:950px) {
     /*
         clientes

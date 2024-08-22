@@ -43,6 +43,10 @@ function Home(){
                 })}
             </div>
 
+            <div className='whats-icon'>
+
+            </div>
+
             <div className='presen-due-home'>
                 <div className='presen-quienes'>
                     <p>¿Quiénes Somos?</p>
