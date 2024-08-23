@@ -33,7 +33,6 @@ const Footer = () => {
                     return(
                         <a key={index} href={item.url} className={item.cName}>
                             <i className={item.icon}/>
-                            {item.title}
                         </a>
                     )
                 })}

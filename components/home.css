@@ -239,11 +239,34 @@
 }
 
 
-.whats-icon{
-    height: 250px;
-    width: 250px;
-    background-color: #C0CB34;
+
+
+.whats-icon a {
+    color: inherit;
+    text-decoration: none; 
 }
+
+.whats-icon {
+    width: 50px;
+    position: sticky;
+    top: 90%;
+    left: calc(100% - 50px - 50px);
+    z-index: 4;
+    font-size: 2.8rem;
+    color: #25d366;
+    transition: .5s;
+}
+
+.whats-icon:hover{
+    font-size: 3.5rem;
+}
+
+
+
+
+
+
+
 @media screen and (max-width:950px) {
     /*
         clientes

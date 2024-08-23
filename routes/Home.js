@@ -26,7 +26,13 @@ function Home(){
                 {/*<img src={image} alt="" />*/}
                 
             </div>
+
             <div className='fondo-transparente-vh' />
+            <div className='whats-icon'>
+                <a href="https://api.whatsapp.com/send/?phone=523334866450&text&app_absent=0">
+                    <i className="fa-brands fa-whatsapp"/>
+                </a>
+            </div>
 
             {/*<p className='tituio-intro-cuatro'>Nuestros mejores diseños </p>*/}
             <div className='intro-cuatro-imgs'>
@@ -43,9 +49,7 @@ function Home(){
                 })}
             </div>
 
-            <div className='whats-icon'>
-
-            </div>
+        
 
             <div className='presen-due-home'>
                 <div className='presen-quienes'>
@@ -77,9 +81,12 @@ function Home(){
                     })}
                 </div>
             </div>
+
+            
             
 
             <Footer/>
+            
         </>
     )
 }
