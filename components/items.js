@@ -314,25 +314,25 @@ import sergio from '../assets/equipoge/SERGIO.jpg';
 
 export const NavItems= [
     {
-        title: "Iniciee",
+        title: "Inicio",
         url :"/",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-house"
     },
     {
-        title: "Serviciees",
+        title: "Servicios",
         url :"/service",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-briefcase"
     },
     {
-        title: "Proyectees",
+        title: "Proyectos",
         url :"/projects",
         cName : "nav-links",
         icon : "fa-solid fa-diagram-project"
     },
     {
-        title: "Nosotreees",
+        title: "Nosotros",
         url :"/about",
         cName : "nav-links",
         icon : "fa-sharp fa-solid fa-users"
@@ -872,7 +872,7 @@ export const All_Corp_Projects= [
                 },
                 {
                     titulo : "Colaboladores",
-                    texto: 'Juan Carlos Gíomez Espinoza - Maria Teresa Topete - Lilia Estrada Segundo'
+                    texto: 'Juan Carlos Gómez Espinoza - Maria Teresa Topete - Lilia Estrada Segundo'
                 },
             ],
         },

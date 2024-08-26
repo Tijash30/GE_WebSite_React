@@ -34,6 +34,10 @@ function Home(){
                 </a>
             </div>
 
+            <a href="../assets/files/Hola.pdf" download="Hola.pdf">
+                <button>Download File</button>
+            </a>
+
             {/*<p className='tituio-intro-cuatro'>Nuestros mejores diseños </p>*/}
             <div className='intro-cuatro-imgs'>
                 {Imgs_e_info_Home.map((item, index) => {
